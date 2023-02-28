@@ -2,6 +2,7 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    path('', views.get, name='add_blacklist'),
-    path('check/', views.post, name='get_blacklist_by_email')
+    path('', views.postBlacklist, name='add_blacklist'),
+    path('check/', views.getInfoBlackList, name='get_blacklist_by_email'),
+    path('game/', views.create_game, name='create_game')
 ]
