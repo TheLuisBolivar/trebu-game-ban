@@ -77,8 +77,12 @@ WSGI_APPLICATION = 'trebu_game_ban.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'trebu_game_ban',
+        'HOST': 'trebu-game-ban.cbaua8ucfsda.us-east-2.rds.amazonaws.com',
+        'USER': 'trebu_user',
+        'PASSWORD': 'Tr3Bu!-2023_G4m3-B4nn!*',
+        'PORT': '5432'
     }
 }
 
