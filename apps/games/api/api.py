@@ -22,6 +22,6 @@ def game_api_view_get(request):
 
     if request.method == 'GET':
         games = Game.objects.all()
-        game_serializers = GameSerializer(data=games, many=True)
+        game_serializers = GameSerializer(games, many=True)
         return Response(status=200, data=game_serializers.data)
     return Response(status=400)

@@ -22,6 +22,6 @@ def user_api_view_get(request):
 
     if request.method == 'GET':
         users = User.objects.all()
-        user_serializers = UserSerializer(data=users, many=True)
+        user_serializers = UserSerializer(users, many=True)
         return Response(status=200, data=user_serializers.data)
     return Response(status=400)
