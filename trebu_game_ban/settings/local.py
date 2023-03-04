@@ -11,11 +11,11 @@ ALLOWED_HOSTS = ['*']
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': os.environ['RDS_DB_NAME'],
-        'HOST': os.environ['RDS_DB_HOST'],
-        'USER': os.environ['RDS_DB_USER'],
-        'PASSWORD': os.environ['RDS_DB_PASS'],
-        'PORT': os.environ['RDS_DB_PORT']
+        'NAME':'trebu_game_ban',
+        'HOST': 'trebu-game-ban.cbaua8ucfsda.us-east-2.rds.amazonaws.com',
+        'USER': 'trebu_user',
+        'PASSWORD': 'Tr3Bu!-2023_G4m3-B4nn',
+        'PORT': '5432'
     }
 }
 
